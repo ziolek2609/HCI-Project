@@ -1,2 +1,2 @@
 # Pizza_kck
-Our first django project:)
+Our first django project :)
