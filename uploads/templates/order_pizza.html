@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<p>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="myfile">
+        <input type="submit" value="Upload and analyze">
+    </form>
+</p>
+
+
+{% endblock %}
