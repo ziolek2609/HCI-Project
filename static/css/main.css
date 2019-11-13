@@ -3,17 +3,20 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: black;
+    background-image: url("/static/img/pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header {
     position: fixed;
     width: 100%;
     height: 70px;
-    background-color: black;
-    top: 0px;
+    background-color: rgb(27, 27, 27);
     z-index: 100000;
     display: flex;
     align-items: center;
+    box-shadow: 0 0 15px;
 }
 
 .navbar {
@@ -25,7 +28,7 @@ body {
 .nav-item {
     text-align: center;
     font-weight: bold;
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     padding-bottom: 3px;
 }
 
@@ -36,4 +39,73 @@ body {
 .header a:hover {
     color: #cabd00;
     text-decoration-line: none;
+}
+
+.starter {
+    text-align: center;
+    position: relative;
+    top: 110px;
+}
+
+.starter h1 {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(196, 24, 19);
+    font-size: 8rem;
+    font-weight: 900;
+    position: relative;
+    animation: title;
+    animation-duration: 2s;
+}
+
+@keyframes title {
+    0% {
+        top: -400px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.starter p {
+    color: cornsilk;
+    padding: 0 30%;
+    position: relative;
+    animation: subtitle;
+    animation-duration: 2s;
+}
+
+@keyframes subtitle {
+    0% {
+        bottom: -400px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+.starter .order_pizza {
+    background-color: black;
+    font-weight: 900;
+    color: #f5ea57;
+    border: #f5ea57 1px solid;
+    box-shadow: 3px 3px 3px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    animation-name: button;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.starter .order_pizza:hover {
+    transform: scale(1.04);
+}
+
+@keyframes button {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
