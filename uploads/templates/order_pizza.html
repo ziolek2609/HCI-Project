@@ -1,13 +1,88 @@
-{% extends 'base.html' %} {% load static %} 
-
-{% block content %}
-<p>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        <input type="file" name="myfile">
-        <input type="submit" value="Upload and analyze">
-    </form>
-</p>
-
+{% extends 'base.html' %} {% block content %}
+<div class="ordering">
+    <div class="row">
+        <div class="ingredients col-sm-7">
+            <h3>Choose your favorite ingredients and optionally gluten-free or lactose-free version!</h3>
+            <h4>Ingredients:</h4>
+            <div class="row">
+                <div class="checkboxes col-sm-9">
+                    <ul class="ing">
+                        <li>
+                            <input type="checkbox" id="item0">
+                            <label for="item0">Mozarella Cheese</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item1">
+                            <label for="item1">Salami</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item2">
+                            <label for="item2">Ham</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item3">
+                            <label for="item3">Parma Ham</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item4">
+                            <label for="item4">Pineapple</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item5">
+                            <label for="item5">Mushrooms</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item6">
+                            <label for="item6">Tomatos</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item7">
+                            <label for="item7">Pepper</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item8">
+                            <label for="item8">Onion</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item9">
+                            <label for="item9">Corn</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item10">
+                            <label for="item10">Basil</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item11">
+                            <label for="item11">Oregano</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item12">
+                            <label for="item12">Argula leaves</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item13">
+                            <label for="item13">Prawns</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item14">
+                            <label for="item14">Tuna</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item15">
+                            <label for="item15">Spinach</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="prices col-sm-3">
+                    4 PLN<br>3 PLN<br>3 PLN<br>4 PLN<br>3 PLN<br>2 PLN<br>2 PLN<br>2 PLN<br>2 PLN<br>3 PLN<br>2 PLN<br>2 PLN<br>3 PLN<br>5 PLN<br>4 PLN<br>3 PLN
+                </div>
+            </div>
+        </div>
+        <div class="summary offset-sm-1 col-sm-4">
+            la la la
+        </div>
+    </div>
+</div>
+</div>
 
 {% endblock %}

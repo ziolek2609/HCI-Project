@@ -109,3 +109,66 @@ body {
         opacity: 1;
     }
 }
+
+.ordering {
+    position: relative;
+    top: 150px;
+    margin: 0 15% 50px 15%;
+}
+
+.ingredients {
+    background-color: rgb(185, 185, 175);
+    opacity: 80%;
+    min-height: 100px;
+    border-radius: 10px;
+    border: solid 2px black;
+    padding: 15px 15px;
+}
+
+.summary {
+    background-color: cadetblue;
+    min-height: 100px;
+}
+
+.checkboxes {
+    padding: 10px 0 0 20px;
+    font-size: 1.2rem;
+}
+
+.prices {
+    padding: 10px 60px 0 0;
+    line-height: 36px;
+    font-size: 1.2rem;
+    text-align: end;
+}
+
+.ing input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.ing input+label:before {
+    content: '❌';
+    margin-right: 10px;
+}
+
+.ing input:checked+label:before {
+    content: '🍕';
+    margin-right: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    padding: 10px 0 0 10px;
+}
