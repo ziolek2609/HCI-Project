@@ -55,6 +55,7 @@ body {
     position: relative;
     animation: title;
     animation-duration: 2s;
+    text-shadow: 5px 5px black;
 }
 
 @keyframes title {
