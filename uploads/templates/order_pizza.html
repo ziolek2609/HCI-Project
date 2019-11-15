@@ -1,10 +1,11 @@
 {% extends 'base.html' %} {% block content %}
 <div class="ordering">
     <div class="row">
+        <h1 class="ordertitle col-sm-12">Create and order your unique pizza!</h1>
         <div class="ingredients col-sm-7">
             <h3>Choose your favorite ingredients and optionally gluten-free or lactose-free version!</h3>
-            <h4>Ingredients:</h4>
             <div class="row">
+                <h4 class="col-sm-12">Ingredients:</h4>
                 <div class="checkboxes col-sm-9">
                     <ul class="ing">
                         <li>
@@ -76,13 +77,34 @@
                 <div class="prices col-sm-3">
                     4 PLN<br>3 PLN<br>3 PLN<br>4 PLN<br>3 PLN<br>2 PLN<br>2 PLN<br>2 PLN<br>2 PLN<br>3 PLN<br>2 PLN<br>2 PLN<br>3 PLN<br>5 PLN<br>4 PLN<br>3 PLN
                 </div>
+                <h4 class="col-sm-12">Special options:</h4>
+                <div class="checkboxes col-sm-9">
+                    <ul class="ing">
+                        <li>
+                            <input type="checkbox" id="item16">
+                            <label for="item16">Gluten-free version</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item17">
+                            <label for="item17">Lactose-free version</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="prices col-sm-3">
+                    5 PLN<br>6 PLN<br>
+                </div>
             </div>
         </div>
         <div class="summary offset-sm-1 col-sm-4">
-            la la la
+            <h3>Summary:</h3>
+            <div class="row">
+                <span class="left col-8">Base price:</span><span class="right col-4">10 PLN</span>
+                <span class="left col-8">Ingredients cost:</span><span class="right col-4">.. PLN</span>
+                <span class="line"></span>
+                <span class="left col-8">TOTAL:</span><span class="right col-4">.. PLN</span>
+                <button type="button" class="btn btn-primary btn-lg offset-1 col-10 order">ORDER!</button>
+            </div>
         </div>
     </div>
-</div>
-</div>
 
-{% endblock %}
+    {% endblock %}

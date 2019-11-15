@@ -33,11 +33,11 @@ body {
 }
 
 .header a {
-    color: #f5ea57
+    color: #f3e528
 }
 
 .header a:hover {
-    color: #cabd00;
+    color: #aaa00c;
     text-decoration-line: none;
 }
 
@@ -47,7 +47,7 @@ body {
     top: 110px;
 }
 
-.starter h1 {
+h1 {
     font-family: 'Indie Flower', cursive;
     color: rgb(196, 24, 19);
     font-size: 8rem;
@@ -84,11 +84,12 @@ body {
     }
 }
 
-.starter .order_pizza {
+.starter .order_pizza,
+.order {
     background-color: black;
     font-weight: 900;
-    color: #f5ea57;
-    border: #f5ea57 1px solid;
+    color: #f3e528;
+    border: #f3e528 1px solid;
     box-shadow: 3px 3px 3px;
     transition: all 0.2s ease-in-out;
     opacity: 0;
@@ -98,8 +99,13 @@ body {
     animation-fill-mode: forwards;
 }
 
-.starter .order_pizza:hover {
+.starter .order_pizza:hover,
+.order:hover {
     transform: scale(1.04);
+    background-color: black;
+    font-weight: 900;
+    color: #f3e528;
+    border: #f3e528 1px solid;
 }
 
 @keyframes button {
@@ -113,22 +119,48 @@ body {
 
 .ordering {
     position: relative;
-    top: 150px;
+    top: 130px;
     margin: 0 15% 50px 15%;
 }
 
-.ingredients {
+.ingredients,
+.summary {
     background-color: rgb(185, 185, 175);
     opacity: 80%;
-    min-height: 100px;
     border-radius: 10px;
     border: solid 2px black;
-    padding: 15px 15px;
+    padding: 15px 25px;
+    box-shadow: 5px 5px 5px;
+    position: relative;
+}
+
+.ingredients {
+    animation: ingredients;
+    animation-duration: 2s;
+}
+
+@keyframes ingredients {
+    0% {
+        left: -700px;
+    }
+    100% {
+        left: 0px;
+    }
 }
 
 .summary {
-    background-color: cadetblue;
-    min-height: 100px;
+    height: 300px;
+    animation: summary;
+    animation-duration: 2s;
+}
+
+@keyframes summary {
+    0% {
+        right: -700px;
+    }
+    100% {
+        right: 0px;
+    }
 }
 
 .checkboxes {
@@ -171,5 +203,43 @@ h3 {
 
 h4 {
     font-size: 1.3rem;
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 20px
+}
+
+.row {
+    padding-left: 20px;
+}
+
+.ordertitle {
+    padding-bottom: 40px;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    color: #f3e528;
+}
+
+.right {
+    text-align: end;
+}
+
+span {
+    padding: 5px 0;
+    font-size: 1.3rem;
+}
+
+.line {
+    height: 0.1px;
+    background-color: black;
+    width: 95%;
+    position: relative;
+    left: 10px;
+    margin: 5px 0;
+    padding: 1px;
+}
+
+.order {
+    position: relative;
+    top: 15px;
+    animation: none;
+    opacity: 1;
 }
