@@ -141,7 +141,7 @@ h1 {
 
 @keyframes ingredients {
     0% {
-        left: -700px;
+        left: -1200px;
     }
     100% {
         left: 0px;
@@ -156,7 +156,7 @@ h1 {
 
 @keyframes summary {
     0% {
-        right: -700px;
+        right: -1000px;
     }
     100% {
         right: 0px;
@@ -164,15 +164,7 @@ h1 {
 }
 
 .checkboxes {
-    padding: 10px 0 0 20px;
     font-size: 1.2rem;
-}
-
-.prices {
-    padding: 10px 60px 0 0;
-    line-height: 36px;
-    font-size: 1.2rem;
-    text-align: end;
 }
 
 .ing input {
@@ -181,6 +173,7 @@ h1 {
 
 label {
     cursor: pointer;
+    padding: 5px 0 0 0;
 }
 
 ul {
@@ -207,7 +200,7 @@ h4 {
 }
 
 .row {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .ordertitle {
