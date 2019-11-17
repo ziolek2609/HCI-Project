@@ -11,7 +11,7 @@ We created Pizzorder as a Django project for our 'Human-Computer Interaction' cl
 ## How to run the Pizzorder?
 All you have to do is cloning this repository using commands:
 
->> `git clone git clone https://github.com/ziolek2609/Pizza_kck`
+>> `git clone https://github.com/ziolek2609/Pizza_kck`
 
 and then:
 
