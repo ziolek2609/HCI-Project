@@ -13,6 +13,10 @@ All you have to do is cloning this repository using commands:
 
 >> `git clone https://github.com/ziolek2609/Pizza_kck`
 
+go in the folder:
+
+>> cd pizza_kck
+
 and then:
 
 >> `python manage.py runserver`
