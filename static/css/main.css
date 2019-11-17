@@ -151,7 +151,7 @@ h1 {
 }
 
 .summary {
-    height: 300px;
+    height: 350px;
     animation: summary;
     animation-duration: 2s;
 }
