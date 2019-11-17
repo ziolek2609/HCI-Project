@@ -117,14 +117,16 @@ h1 {
     }
 }
 
-.ordering {
+.ordering,
+.contact {
     position: relative;
     top: 130px;
     margin: 0 15% 50px 15%;
 }
 
 .ingredients,
-.summary {
+.summary,
+.contacting {
     background-color: rgb(185, 185, 175);
     opacity: 80%;
     border-radius: 10px;
@@ -203,9 +205,10 @@ h4 {
     padding-left: 10px;
 }
 
-.ordertitle {
+.ordertitle,
+.contacttitle {
     padding-bottom: 40px;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     text-shadow: 2px 2px black;
     color: #f3e528;
@@ -235,4 +238,69 @@ span {
     top: 15px;
     animation: none;
     opacity: 1;
+}
+
+.contacting {
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 30px;
+    animation: ingredients;
+    position: relative;
+    animation-duration: 2s;
+    ;
+}
+
+.contacting h2 {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.icon-bar {
+    margin-top: 40px;
+}
+
+.icon-bar a {
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+    padding: 20px 23px !important;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.snapchat {
+    background: #f3f70d;
+    color: white;
+}
+
+.instagram {
+    background: #c51e8d;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+iframe {
+    animation: summary;
+    position: relative;
+    animation-duration: 2s;
+    border-radius: 10%;
 }
