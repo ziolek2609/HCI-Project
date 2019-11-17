@@ -1,11 +1,12 @@
 {% extends 'base.html' %} {% block content %}
-<div class="ordering">
+<form method="POST" class="ordering">
+    {% csrf_token %}
     <div class="row">
         <h1 class="ordertitle col-sm-12">Create and order your unique pizza!</h1>
         <div class="ingredients col-sm-7">
-            <h3>Choose your favorite ingredients and optionally gluten-free or lactose-free version!</h3>
+            <h2 id="form__header-1">Choose your favorite ingredients and optionally gluten-free or lactose-free version!</h2>
             <div class="row">
-                <h4 class="col-sm-12">Ingredients:</h4>
+                <h3 class="col-sm-12">Ingredients:</h3>
                 <div class="checkboxes col-sm-12">
                     <ul class="ing">
                         <li class="row">
@@ -74,7 +75,7 @@
                         </li>
                     </ul>
                 </div>
-                <h4 class="col-sm-12">Special options:</h4>
+                <h2 class="col-sm-12" id="form__header-2">Special options:</h4>
                 <div class="checkboxes col-sm-12">
                     <ul class="ing">
                         <li class="row">
@@ -90,15 +91,15 @@
             </div>
         </div>
         <div class="summary offset-sm-1 col-sm-4">
-            <h3>Summary:</h3>
+            <h2 id="form__header-1">Summary:</h2>
             <div class="row">
                 <span class="left col-8">Base price:</span><span class="right col-4">10 PLN</span>
                 <span class="left col-8">Ingredients cost:</span><span class="right col-4">0 PLN</span>
                 <span class="line"></span>
                 <span class="left col-8" style="font-weight: bold; font-size: 1.4rem;">TOTAL:</span><span class="right col-4" style="font-weight: bold; font-size:1.4rem">10 PLN</span>
-                <button type="button" class="btn btn-primary btn-lg offset-1 col-10 order">ORDER!</button>
+                <button type="submit" class="btn btn-primary btn-lg offset-1 col-10 order">ORDER!</button>
             </div>
         </div>
-    </div>
+    </form>
 
     {% endblock %}
