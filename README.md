@@ -15,7 +15,7 @@ All you have to do is cloning this repository using commands:
 
 go in the folder:
 
->> cd pizza_kck
+>> `cd pizza_kck`
 
 and then:
 
