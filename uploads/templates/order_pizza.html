@@ -107,8 +107,8 @@
 <div class="contact">
         <div class="row">
             <h1 class="contacttitle col-12"> Your order:</h1>
-            <div class="contacting col-12" id="testorder">
-                <h2 id="final_order">{{ test }}</h2>        
+            <div class="contacting col-12">
+                <h2>{{ test }}</h2>        
             </div>
             </div>
         </div>
@@ -123,11 +123,6 @@
     var sume = document.getElementById("ing")
     var special = document.getElementById("special")
     var total = document.getElementById("total")
-    var final = document.getElementById("final_order")
-
-    function OnSubmit(){
-        localStorage.setItem(key, final);
-    }
 
 
     function OnChangeCheckbox2(checkbox) {
