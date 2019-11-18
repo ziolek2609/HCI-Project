@@ -15,11 +15,13 @@ All you have to do is cloning this repository using commands:
 
 go in the folder:
 
->> `cd pizza_kck`
+>> `cd HCI-Project`
 
 and then:
 
->> `python manage.py runserver`
+>> `python manage.py runserver`.
+
+Now you can use Pizzorder in your browser at http://127.0.0.1:8000/.
 
 
 *Hope you enjoy Pizzorder!*
