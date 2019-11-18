@@ -9,11 +9,6 @@ def home(request):
     return render(request, 'home.html')
 
 
-def your_orders(request):
-    print('Your Orders')
-    return render(request, 'your_orders.html')
-
-
 def contact(request):
     print('Contact')
     return render(request, 'contact.html')
