@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<form method="POST" class="ordering">
+<form method="POST" class="ordering" id="order">
     {% csrf_token %}
 
     <div class="row">
@@ -11,67 +11,67 @@
                 <div class="checkboxes col-sm-12">
                     <ul class="ing">
                         <li class="row">
-                            <input type="checkbox" id="item0" onclick="OnChangeCheckbox4 (this)">
+                            <input type="checkbox" id="item0" name="item0" value="mozzarella cheese" onclick="OnChangeCheckbox4 (this)">
                             <label for="item0" class="col-7">Mozarella Cheese</label><span class="right col-4">4 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item1" onclick="OnChangeCheckbox3 (this)">
+                            <input type="checkbox" id="item1" name="item1" value="salami" onclick="OnChangeCheckbox3 (this)">
                             <label for="item1" class="col-7">Salami</label><span class="right col-4">3 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item2" onclick="OnChangeCheckbox3 (this)">
+                            <input type="checkbox" id="item2" name="item2" value="ham" onclick="OnChangeCheckbox3 (this)">
                             <label for="item2" class="col-7">Ham</label><span class="right col-4">3 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item3" onclick="OnChangeCheckbox5 (this)">
+                            <input type="checkbox" id="item3" name="item3" value="parma ham" onclick="OnChangeCheckbox5 (this)">
                             <label for="item3" class="col-7">Parma Ham</label><span class="right col-4">5 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item4" onclick="OnChangeCheckbox3 (this)">
+                            <input type="checkbox" id="item4" name="item4" value="pineapple" onclick="OnChangeCheckbox3 (this)">
                             <label for="item4" class="col-7">Pineapple</label><span class="right col-4">3 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item5" onclick="OnChangeCheckbox2 (this)">
+                            <input type="checkbox" id="item5" name="item5" value="mushrooms" onclick="OnChangeCheckbox2 (this)">
                             <label for="item5" class="col-7">Mushrooms</label><span class="right col-4">2 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item6" onclick="OnChangeCheckbox3 (this)">
+                            <input type="checkbox" id="item6" name="item6" value="tomatos" onclick="OnChangeCheckbox3 (this)">
                             <label for="item6" class="col-7">Tomatos</label><span class="right col-4">3 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item7" onclick="OnChangeCheckbox3 (this)">
+                            <input type="checkbox" id="item7" name="item7" value="pepper" onclick="OnChangeCheckbox3 (this)">
                             <label for="item7" class="col-7">Pepper</label><span class="right col-4">3 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item8" onclick="OnChangeCheckbox2 (this)">
+                            <input type="checkbox" id="item8" name="item8" value="onion" onclick="OnChangeCheckbox2 (this)">
                             <label for="item8" class="col-7">Onion</label><span class="right col-4">2 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item9" onclick="OnChangeCheckbox2 (this)">
+                            <input type="checkbox" id="item9" name="item9" value="corn" onclick="OnChangeCheckbox2 (this)">
                             <label for="item9" class="col-7">Corn</label><span class="right col-4">2 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item10" onclick="OnChangeCheckbox2 (this)">
+                            <input type="checkbox" id="item10" name="item10" value="basil" onclick="OnChangeCheckbox2 (this)">
                             <label for="item10" class="col-7">Basil</label><span class="right col-4">2 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item11" onclick="OnChangeCheckbox2 (this)">
+                            <input type="checkbox" id="item11" name="item11" value="oregano" onclick="OnChangeCheckbox2 (this)">
                             <label for="item11" class="col-7">Oregano</label><span class="right col-4">2 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item12" onclick="OnChangeCheckbox2 (this)">
+                            <input type="checkbox" id="item12" name="item12" value="argula leaves" onclick="OnChangeCheckbox2 (this)">
                             <label for="item12" class="col-7">Argula leaves</label><span class="right col-4">2 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item13" onclick="OnChangeCheckbox5 (this)">
+                            <input type="checkbox" id="item13" name="item13" value="prawns" onclick="OnChangeCheckbox5 (this)">
                             <label for="item13" class="col-7">Prawns</label><span class="right col-4">5 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item14" onclick="OnChangeCheckbox4 (this)">
+                            <input type="checkbox" id="item14" name="item14" value="tuna" onclick="OnChangeCheckbox4 (this)">
                             <label for="item14" class="col-7">Tuna</label><span class="right col-4">4 PLN</span>
                         </li>
                         <li class="row">
-                            <input type="checkbox" id="item15" onclick="OnChangeCheckbox3 (this)">
+                            <input type="checkbox" id="item15" name="item15" value="spinach" onclick="OnChangeCheckbox3 (this)">
                             <label for="item15" class="col-7">Spinach</label><span class="right col-4">3 PLN</span>
                         </li>
                     </ul>
@@ -80,11 +80,11 @@
                     <div class="checkboxes col-sm-12">
                         <ul class="ing">
                             <li class="row">
-                                <input type="checkbox" id="item16" onclick="OnChangeCheckboxSpecial (this)">
+                                <input type="checkbox" id="item16" name="item16" value="gluten" onclick="OnChangeCheckboxSpecial (this)">
                                 <label for="item16" class="col-7">Gluten-free version</label><span class="right col-4">5 PLN</span>
                             </li>
                             <li class="row">
-                                <input type="checkbox" id="item17" onclick="OnChangeCheckboxSpecial (this)">
+                                <input type="checkbox" id="item17" name="item17" value="lactose" onclick="OnChangeCheckboxSpecial (this)">
                                 <label for="item17" class="col-7">Lactose-free version</label><span class="right col-4">5 PLN</span>
                             </li>
                         </ul>
@@ -99,10 +99,21 @@
                 <span class="left col-8">Specials cost:</span><span class="right col-4" id="special">0 PLN</span>
                 <span class="line"></span>
                 <span class="left col-7" style="font-weight: bold; font-size: 1.4rem;">TOTAL:</span><span class="right col-5" id="total" style="font-weight: bold; font-size:1.4rem">10 PLN</span>
-                <button type="submit" class="btn btn-primary btn-lg offset-1 col-10 order">ORDER!</button>
+                <button type="submit" class="btn btn-primary btn-lg offset-1 col-10 order" onclick="OnSubmit()">ORDER!</button>
             </div>
         </div>
+        
 </form>
+<div class="contact">
+        <div class="row">
+            <h1 class="contacttitle col-12"> Your order:</h1>
+            <div class="contacting col-12" id="testorder">
+                <h2 id="final_order">{{ test }}</h2>        
+            </div>
+            </div>
+        </div>
+    </div>
+
 
 
 <script type="text/javascript">
@@ -112,6 +123,12 @@
     var sume = document.getElementById("ing")
     var special = document.getElementById("special")
     var total = document.getElementById("total")
+    var final = document.getElementById("final_order")
+
+    function OnSubmit(){
+        localStorage.setItem(key, final);
+    }
+
 
     function OnChangeCheckbox2(checkbox) {
         if (checkbox.checked) {
@@ -182,6 +199,7 @@
             total.innerText = `${money_total} PLN`
         }
     }
+
 </script>
 
 {% endblock %}

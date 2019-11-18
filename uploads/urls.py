@@ -9,5 +9,4 @@ urlpatterns = [
     url('order_pizza/', views.order_pizza, name='order_pizza'),
     url('your_orders/', views.your_orders, name='your_orders'),
     url('contact/', views.contact, name='contact'),
-    url('test/', views.test, name='test'),
 ]

@@ -304,3 +304,6 @@ iframe {
     animation-duration: 2s;
     border-radius: 10%;
 }
+.final_order{
+    display: none;
+}
